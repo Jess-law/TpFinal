@@ -21,26 +21,26 @@
         <div class="contact-wrapper">
             <div class="contact-form">
                 <h3>Contáctanos</h3>
-                <form action="">
+                <form action="" id="formulario">
+                    <label>Nombre completo</label>
                     <p>
-                        <label>Nombre completo</label>
-                        <input type="text" name="nombre-completo" required>
+                        <input type="text" name="nombre-completo" id= "usuario" required>
                     </p>
                     <label>Email</label>
                     <p>
-                    <input type="email" name="email" required>
+                    <input type="email" name="email" id="email" required>
                     </p>
                     <label>Teléfono</label>
                     <p>
-                        <input type="tel" name="phone"pattern= "[0-9]{3}-[0-9]{4}" required>
+                        <input type="tel" name="phone"pattern= "[0-9]{3}-[0-9]{4}" id="relefono" required>
                     </p>
                     <label>Asunto</label>
                     <p>
-                        <input type="text" name="affair">
+                        <input type="text" name="affair" id="asunto">
                     </p>
                     <label>Escribe aquí tu mensaje</label>
-                    <textarea name="message" rows="3"></textarea> <br>
-                    <button type="Enviar">Enviar</button>
+                    <textarea name="message" rows="3" id="mensaje" required></textarea> <br>
+                    <button type="Enviar" value="enviar">Enviar</button>
                 </form>
             </div>
             <div class="contact-info">
@@ -59,9 +59,10 @@
             </div>
         </div>
         <div>
-            <a href="/index.html" class="btn">Volver al menú principal <i class="fas fa-angle-double-left"></i></a>
+            <a href="./index.html" class="btn">Volver al menú principal <i class="fas fa-angle-double-left"></i></a>
         </div>
     </div>
 
 </body>
+<script src="./JavaScript/contacto.js"></script>
 </html>
