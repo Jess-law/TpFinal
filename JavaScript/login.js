@@ -10,7 +10,7 @@ function login(event){
     const password = document.getElementById("password").value;
 
 if(email === validEmail && validPassword === password){
-    window.location.href = "<span>inicio.html</span>";
+    window.location.href = "inicio.html";
 }else{
     document.getElementById("error").innerHTML = "<span> Usuario o contraseña invalida</span>"
 }

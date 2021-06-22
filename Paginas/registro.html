@@ -6,35 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="/Css/stylesReg.css">
     <title>Registro</title>
 </head>
+    
 <body>
     <main class="container">
     <div class="form-container">
     <form class="form-login" onsubmit= "login(event)">
     <h3 class="my-title">¡Registrate para recibir la información necesaria para comenzar el registro de tu marca!
         <i class="bi bi-speeaker-fill"></i>
+        <hr>
     </h3>
+    <div>
+        <label for="nombre">Nombre completo</label>
+        <input type="nombre" class="form-control" name="nombre" id="nombre" placeholder="Juan Perez" required>
+    </div>
         <div>
             <label for="email">Correo electrónico</label>
             <input type="email" class="form-control" name="email" id="email" placeholder="juan.perez33@gmail.com" required>
         </div>
         <div>
-            <label for="password">contraseña</label>
+            <label for="password">Contraseña</label>
             <input type="password" class="form-control" name="password" id="password" placeholder="*******" maxlength="12"
             minlength="6" required>
             <h3 class="error-message" id="error"></h3>
         </div>
         <div>
             <button class="btn btn-primary my-button" type="submit">
-                Registrate
+                Suscríbete
             </button>
+            
         </div>
+        <p class="warnings" id="warnings"></p>
         <h3 class="error-message"></h3>
+        <div>
+        <a href="#" class="olvido">¿Olvidaste tu usuario y/ó contraseña?</a>
+    </div>
+    <div>
+        <a href="/Paginas/index.html" class="btn">Volver al menú principal <i class="fas fa-angle-double-left"></i></a>
+    </div>
     </div>
     </form>
     </main>
     <script src="/JavaScript/login.js"></script>
 </body>
+    
+
 </html>
