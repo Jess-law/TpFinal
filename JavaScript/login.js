@@ -1,17 +1,30 @@
-const validEmail = "asd@gmail.com";
-const validPassword = "123456";
+var nombre;
+var email;
+var password;
+var nameCorrect;
+var passCorrect;
 
 function login(event){
     event.preventDefault();
 
-    console.info("me ejecuto");
+nombre = document.getElementById("nombre").value;
+email = document.getElementById("email").value;
+password = document.getElementById("password").value;
 
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-if(email === validEmail && validPassword === password){
-    window.location.href = "inicio.html";
+if(!isNaN(nombre)){
+   window.alert("Ingrese un nombre válido");
+    nameCorrect = false;
 }else{
-    document.getElementById("error").innerHTML = "<span> Usuario o contraseña invalida</span>"
+    nameCorrect = true;
+}
+if(nombre.length < 3 || nombre.length > 10){
+   window.alert("Nombre inválido");
+    passCorrect = false;
+}else{
+    passCorrect = true;
+}
+
+if(nameCorrect && passCorrect){
+    document.getElementById("error").innerHTML = "<span> Te has suscripto correctamente</span>"
 }
 }
