@@ -8,18 +8,18 @@ var regName = / ^ [a-zA-Z] + [a-zA-Z] + $ /;
 
 function enviar(event){
     event.preventDefault();
-    usuario = document.getElementById("nombre").value;
+    usuario = document.getElementById("usuario").value;
     email = document.getElementById("email").value;
     telefono = document.getElementById("telefono").value;
     asunto = document.getElementById("asunto").value;
     mensaje = document.getElementById("mensaje").value;
-
+    validacion();
     
 }
 
 function validacion() {
-    if (! regName.test (nombre)) {
-      alert('[ERROR] El campo debe contener nombre y apellido');
+    if (!isNaN (usuario)) {
+        window.alert("Ingrese un nombre válido");
       return false;
     }
     else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(email)) {
