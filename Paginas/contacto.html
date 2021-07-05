@@ -32,15 +32,17 @@
                     </p>
                     <label>Teléfono</label>
                     <p>
-                        <input type="tel" name="phone"pattern= "[0-9]{3}-[0-9]{4}" id="relefono" required>
+                        <input type="tel" name="phone"pattern= "[0-9]{3}-[0-9]{7}" id="relefono" required>
                     </p>
                     <label>Asunto</label>
                     <p>
-                        <input type="text" name="affair" id="asunto">
+                        <input type="text" name="affair" id="asunto" required>
                     </p>
                     <label>Escribe aquí tu mensaje</label>
                     <textarea name="message" rows="3" id="mensaje" required></textarea> <br>
+                    <form action="enviar" method="enviar" id="enviar" name="enviar" onsubmit="return validacion()">
                     <button type="Enviar" value="enviar">Enviar</button>
+                    </form>
                 </form>
             </div>
             <div class="contact-info">
