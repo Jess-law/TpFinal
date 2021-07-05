@@ -21,7 +21,7 @@
         <div class="contact-wrapper">
             <div class="contact-form">
                 <h3>Contáctanos</h3>
-                <form action="" id="formulario">
+                <form onsubmit="click(event)">
                     <label>Nombre completo</label>
                     <p>
                         <input type="text" name="nombre-completo" id= "usuario" required>
@@ -40,9 +40,7 @@
                     </p>
                     <label>Escribe aquí tu mensaje</label>
                     <textarea name="message" rows="3" id="mensaje" required></textarea> <br>
-                    <form action="enviar" method="enviar" id="enviar" name="enviar" onsubmit="return validacion()">
-                    <button type="Enviar" value="enviar">Enviar</button>
-                    </form>
+                    <button type="submit" value="enviar" id="submit" name="submit">Enviar</button>
                 </form>
             </div>
             <div class="contact-info">
