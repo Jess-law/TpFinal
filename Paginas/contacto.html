@@ -21,39 +21,41 @@
         <div class="contact-wrapper">
             <div class="contact-form">
                 <h3>Contáctanos</h3>
-                <form onsubmit="click(event)">
+                <form onsubmit="click2(event)">
                     <label>Nombre completo</label>
                     <p>
-                        <input type="text" name="nombre-completo" id= "usuario" required>
+                        <input type="text" name="usuario" id= "usuario" placeholder="Nombre y apellido" required>
                     </p>
                     <label>Email</label>
                     <p>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" required>
                     </p>
                     <label>Teléfono</label>
                     <p>
-                        <input type="tel" name="phone"pattern= "[0-9]{3}-[0-9]{7}" id="relefono" required>
+                        <input type="tel" name="telefono" placeholder="123-4587963" id="telefono" required>
                     </p>
                     <label>Asunto</label>
                     <p>
-                        <input type="text" name="affair" id="asunto" required>
+                        <input type="text" name="asunto" id="asunto" placeholder="Tema a consultar" required>
                     </p>
                     <label>Escribe aquí tu mensaje</label>
-                    <textarea name="message" rows="3" id="mensaje" required></textarea> <br>
+                    <textarea name="message" rows="3" id="mensaje" placeholder="Escribe aquí tu mensaje..." required></textarea> <br>
+                    
                     <button type="submit" value="enviar" id="submit" name="submit">Enviar</button>
+                    <h3 class="error-message" id="error"></h3>
                 </form>
             </div>
             <div class="contact-info">
                 <h3>Más información</h3>
                 <ul>
                     <li>
-                        <i class="fas fa-map-marker-alt"> Mar del Plata</i>
+                        <i class="fas fa-map-marker-alt">Mar del Plata</i>
                     </li>
                     <li>
-                        <i class="fas fa-phone-square-alt"> 223-5732012</i>
+                        <i class="fas fa-phone-square-alt" id="telefono"> <a href="tel:+5492235732012"> 223-5732012 </a></i>
                     </li>
                     <li>
-                        <i class="fas fa-envelope">jessica.tambascia@gmail.com</i>
+                        <i class="fas fa-envelope" id="mail"> <a href="mailto:jessica.tambascia@gmail.com"> jessica.tambascia@gmail.com </a></i>
                     </li>
                 </ul>
             </div>
